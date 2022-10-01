@@ -6,6 +6,8 @@
     height: 100vh;
     width: 100vw;
     font-family: "comic sans ms";
+    background-image: linear-gradient(to right top, #c712da, #d55adf, #e186e5, #eaaeea, #f0d5ef);
+
 }
 .header{
     height: 20%;
@@ -42,6 +44,15 @@
     justify-content: space-between;
     padding: 0%;
 }
+.carousel-item{
+    object-fit: cover;
+    background-size: cover;   
+    overflow: auto; 
+    width: 80vw;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+}
 .imagen{
     width: 100%;
     height: 60vh;
@@ -52,10 +63,11 @@
     background-repeat: no-repeat;
     background-size: cover;   
     overflow: auto; 
+    object-fit: cover;
 }
 .imagen-texto{
     text-transform: uppercase;
-    color: rgb(245, 205, 205);
+    /*color: rgb(245, 205, 205);*/
     animation-duration: 4s;
     animation-name: aparecer;
     animation-iteration-count: initial;
