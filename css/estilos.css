@@ -1,0 +1,106 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box; }
+
+.body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "comic sans ms";
+  background-image: linear-gradient(to right top, #c712da, #d55adf, #e186e5, #eaaeea, #f0d5ef); }
+
+.header {
+  height: 20%;
+  width: 100%;
+  background-image: linear-gradient(to right top, #c712da, #d55adf, #e186e5, #eaaeea, #f0d5ef);
+  display: inline-flex;
+  align-items: center; }
+
+.navegador-logo {
+  width: 30%; }
+
+.navegador-lista {
+  width: 70%;
+  align-items: flex-end;
+  padding: 10%; }
+
+.animate__animated {
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+.link {
+  list-style-type: none;
+  display: inline;
+  font-size: 1,5rem; }
+
+.main {
+  width: 100%;
+  height: 60%;
+  background-color: #f5cdcd;
+  display: flex; }
+
+.main-galeria {
+  background-color: #c712da;
+  justify-content: space-between;
+  padding: 0%; }
+
+.carousel-item {
+  object-fit: cover;
+  background-size: cover;
+  overflow: auto;
+  width: 80vw;
+  margin: 0%;
+  padding: 0%;
+  display: flex; }
+
+.imagen {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/depositphotos_79567812-stock-photo-professional-creative-graphic-designer-desk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+  object-fit: cover; }
+
+.imagen-texto {
+  text-transform: uppercase;
+  /*color: rgb(245, 205, 205);*/
+  animation-duration: 4s;
+  animation-name: aparecer;
+  animation-iteration-count: initial; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.galeria {
+  padding: 0%;
+  overflow: auto; }
+
+.img-galeria {
+  width: 30vw;
+  height: 30vh;
+  object-fit: cover; }
+
+.footer {
+  width: 100%;
+  height: 20%;
+  background-image: linear-gradient(to right top, #c712da, #d55adf, #e186e5, #eaaeea, #f0d5ef);
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1rem; }
+
+.lista-pie {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20%;
+  margin-right: 20%; }
+
+.derechos {
+  font-size: 2vh; }

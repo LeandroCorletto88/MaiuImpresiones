@@ -1,0 +1,192 @@
+@import "reset";
+
+.body{
+    height: 100vh;
+    width: 100%;
+    font-family: "comic sans ms";
+    background-image: linear-gradient(to right top, #c712da, #d55adf, #e186e5, #eaaeea, #f0d5ef);
+}
+.body404{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "comic sans ms";
+    background-color: #c712da;
+}
+.boton{
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background: #f352de;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: large;
+}
+.header{
+    height: 20%;
+    width: 100%;
+    background-image: linear-gradient(to right top, #c712da, #d55adf, #e186e5, #eaaeea, #f0d5ef);
+    display: inline-flex;
+    align-items: center;
+}
+.quienesSomos{
+    position: relative;
+    top: 50%;  
+    width: 150%;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+.navegador-logo{
+    width: 30%;
+}
+.navegador-lista{
+    width: 70%;
+    align-items: flex-end;
+    padding: 10%;
+}
+.QSomos{
+    margin: auto;
+    display: table;
+}
+.descripcion{
+    float: left;
+    color:#fff;
+    position: relative;
+
+}
+/* animaciones que no me salio...
+.descripcion span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #c712da;
+    border-left: 1px solid #000;
+    animation: maquina 100s infinite alternate
+}
+.animate__animated{
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes maquina{
+    from { 
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+.anim-typewriter{
+    animation: typewriter 30s steps(120) 1s 3 normal both,
+               blinkTextCursor 500ms steps(530) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+  } */
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+.link{
+    list-style-type: none;
+    display: inline;
+    font-size: 1,5rem;
+}
+.main{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(245, 205, 205);
+    display: flex;
+}
+.main_contacto{
+    justify-content: space-around;
+    width: 100%;
+    height: 60%;
+    background-color: rgb(245, 205, 205);
+    display: flex;
+}
+.main-galeria{
+    background-color: #c712da;
+    justify-content: space-between;
+    padding: 0%;
+}
+.carousel-item{
+    object-fit: cover;
+    background-size: cover;   
+    overflow: auto; 
+    width: 80vw;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+}
+.imagen{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/depositphotos_79567812-stock-photo-professional-creative-graphic-designer-desk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    overflow: auto; 
+    object-fit: cover;
+}
+.imagen-texto{
+    text-transform: uppercase;
+    /*color: rgb(245, 205, 205);*/
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.galeria{
+    padding: 0%;
+    overflow: auto;
+}
+.img-galeria{
+    width: 30vw;
+    height: 30vh;
+    object-fit: cover;
+}
+.ventana_404{
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 1px 10px;
+    border-radius: 5px;
+    line-height: 1.7;
+}
+.footer{
+    width: 100%;
+    height: 20%;
+    background-image: linear-gradient(to right top, #c712da, #d55adf, #e186e5, #eaaeea, #f0d5ef);
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1rem;
+}
+.lista-pie{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.derechos{
+    font-size: 2px;
+}
