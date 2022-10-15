@@ -69,7 +69,7 @@
 
 .descripcion {
   float: left;
-  color: #fff;
+  color: rgb(129, 21, 75);
   position: relative;
 }
 
@@ -210,6 +210,11 @@
      object-fit: cover;
 }
 
+.div_contacto {
+  width: 50%;
+  align-items: center;
+}
+
 .ventana_404 {
   text-align: center;
   width: 100%;
@@ -240,4 +245,11 @@
 
 .derechos {
   font-size: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .div_contacto {
+    display: block;
+    width: 100%;
+  }
 }/*# sourceMappingURL=estilos.css.map */
